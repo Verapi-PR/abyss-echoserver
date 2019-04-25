@@ -17,3 +17,6 @@ install:
 
 script:
   - mvn -s .travis.maven.settings.xml clean install
+
+notifications:
+  slack: $SLACK_TOKEN
